@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clusster</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221214210249">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__body">
+                    <a href="main.html" class="header__logo">
+                        <img src="img/logo.svg" alt="Logo">
+                    </a>
+                    <a href="main.html" class="header__logo_mob">
+                        <img src="img/logo-mob.svg" alt="Logo">
+                    </a>
+                    <div class="header__btns">
+                        <a href="#" class="header__btn header__btn_authorisation btn_green">Авторизація</a>
+                        <a href="#" class="header__btn header__btn_registration btn_green">Реєстрація</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="main__container container">
+                <div class="main__body">
+                    <div class="main__left">
+                        <div class="main__offer offer">
+                            <div class="offer__pretitle">ЛАСКАВО ПРОСИМО В</div>
+                            <h1 class="offer__title">CLUSSTER</h1>
+                            <div class="offer__desc">Ця соціальна мережа для тих,
+                                хто хоче спілкуватися і заробляти!</div>
+                            <a href="#authorisation" class="offer__btn offer__btn_auth">Увійти</a>
+                        </div>
+                        <div class="registration" id="registration">
+                            <div class="registration__body">
+                                <div class="registration__content">
+                                    <h2 class="registration__title">Реєстрація</h2>
+                                    <div class="registration__subtitle">Через соціальні мережі</div>
+                                    <div class="registration__socials">
+                                        <a href="#" class="registration__social">
+                                            <img src="img/google.svg" alt="Google">
+                                            Google
+                                        </a>
+                                        <a href="#" class="registration__social">
+                                            <img src="img/facebook.svg" alt="facebook">
+                                            Facebook
+                                        </a>
+                                    </div>
+                                    <div class="registration__subtitle">або</div>
+                                    <form class="registration__form form-registration" action="#">
+                                        <ul class="form-registration__list">
+                                            <li class="form-registration__item">
+                                                <div class="form-registration__title">Прізвище та ім’я</div>
+                                                <div class="form-registration__input">
+                                                    <input type="text">
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
+                                            </li>
+                                            <li class="form-registration__item">
+                                                <div class="form-registration__title">Номер телефону</div>
+                                                <div class="form-registration__input">
+                                                    <input type="text" id="reg-phone" value="+380">
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
+                                            </li>
+                                            <li class="form-registration__item">
+                                                <div class="form-registration__title">Адреса ел.пошти</div>
+                                                <div class="form-registration__input">
+                                                    <input type="text">
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
+                                            </li>
+                                            <li class="form-registration__item">
+                                                <div class="form-registration__title">Пароль</div>
+                                                <div class="form-registration__input settings__input">
+                                                    <input type="password" value="password">
+                                                    <button type="button" class="settings__hide">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
+                                            </li>
+                                            <li class="form-registration__item">
+                                                <div class="form-registration__title">Повторіть пароль</div>
+                                                <div class="form-registration__input settings__input">
+                                                    <input type="text" value="password">
+                                                    <button type="button" class="settings__hide active">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="form-registration__warning form-registration__warning_red">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Невірний пароль</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="registration__note">
+                                            Якщо ваша ел. адрес вже була зареєстрована, будь ласка виберіть
+                                            “Авторизація”, так як повторна реєстрація неможлива
+                                        </div>
+                                        <a href="#" class="registration__btn btn_green">Реєстрація</a>
+                                        <div class="registration__note_last">
+                                            Натиснувши зареєструватися, ви погоджуєтесь
+                                            з <a href="#" class="registration__link">Умовами сайту</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration" id="authorisation">
+                            <div class="registration__body">
+                                <div class="registration__content">
+                                    <h2 class="registration__title">Авторизація</h2>
+                                    <form class="registration__form form-registration" action="#">
+                                        <ul class="form-registration__list">
+                                            <li class="form-registration__item">
+                                                <div class="form-registration__title">Адреса ел.пошти</div>
+                                                <div class="form-registration__input">
+                                                    <input type="text">
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
+                                            </li>
+                                            <li class="form-registration__item">
+                                                <div class="form-registration__title">Пароль</div>
+                                                <div class="form-registration__input settings__input">
+                                                    <input type="password" value="password">
+                                                    <button type="button" class="settings__hide">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="form-registration__warning form-registration__warning_red">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Невірний пароль</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="registration__checkbox checkbox">
+                                            Запам’ятати мене
+                                            <input type="checkbox">
+                                        </div>
+                                        <a href="main.html" class="registration__btn btn_green">Авторизація</a>
+                                        <div class="registration__bottom">
+                                            <a href="#recover" class="registration__forgot">Забули пароль?</a>
+                                            <div class="registration__create">
+                                                <spam>Немає акаунту?</spam>
+                                                <a href="#registration" class="registration__reg">Зареєструйтесь!</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration" id="recover">
+                            <div class="registration__body">
+                                <div class="registration__content">
+                                    <h2 class="registration__title">Відновлення паролю</h2>
+                                    <form class="registration__form form-registration" action="#">
+                                        <ul class="form-registration__list">
+                                            <li class="form-registration__item">
+                                                <div class="form-registration__title">Адреса ел.пошти</div>
+                                                <div class="form-registration__input">
+                                                    <input type="text">
+                                                </div>
+                                                <div
+                                                    class="form-registration__warning form-registration__warning_error">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>За цією ел. поштою немає аккаунту, будь ласка,
+                                                        перевірте.</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="registration__note">
+                                            Вкажіть вашу адресу ел. пошти аккаунту. На цю адресу буде відправленне
+                                            посилання для відновлення паролю.
+                                        </div>
+                                        <a href="#restore"
+                                            class="registration__btn registration__restore btn_green">Відправити</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration" id="restore">
+                            <div class="registration__body">
+                                <div class="registration__content">
+                                    <h2 class="registration__title">Скидання паролю</h2>
+                                    <form class="registration__form form-registration" action="#">
+                                        <div class="registration__note">
+                                            Ми надіслали вам листа з кодом підтвердження з шести цифр. Введіть їх нижче,
+                                            щоб
+                                            скинути пароль.
+                                        </div>
+                                        <div class="form-registration__recover">
+                                            <div class="form-registration__left">
+                                                <div class="form-registration__note">
+                                                    Ми надіслали вам код
+                                                </div>
+                                                <div class="form-registration__email">
+                                                    userclusster@gmail.com
+                                                </div>
+                                            </div>
+                                            <div class="form-registration__right">
+                                                <div class="form-registration__input">
+                                                    <input type="text" placeholder="Введіть код ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-registration__error">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#attention"></use>
+                                            </svg>
+                                            <span>Невірний код, спробуйте ще раз.</span>
+                                        </div>
+                                        <a href="#" class="registration__btn registration__reset btn_green">Скинути
+                                            пароль</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__right">
+                        <div class="main__image">
+                            <picture><source srcset="img/main-image.webp" type="image/webp"><img src="img/main-image.png" alt="Image"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- page__container -->
+        </div> <!-- page -->
+
+        <div class="popup" id="likes">
+    <div class="popup__body">
+        <div class="popup__content">
+
+            <div class="messages__body">
+                <div class="messages__header">
+                    <h2 class="messages__title">Сподобалось читачам</h2>
+                    <div class="messages__close close-popup">
+                        <svg>
+                            <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="messages__items">
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">1 член клубу</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">1 член клубу</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">1 член клубу</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">1 член клубу</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">1 член клубу</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">1 член клубу</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">1 член клубу</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="messages__footer">
+                    <a href="#" class="messages__all">
+                        Переглянути усі результати
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="post-delete">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення публікації</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити публікацію?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#post-deleted" class="popup-confirm__btn_green popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="post-deleted">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Публікація була видалена!
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-canvas-photo">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалити фото обкладинки</h2>
+            <div class="popup-confirm__text">Якщо ви видалите це фото профілю буде видалена і публікація з ним.
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-canvas-photo" class="popup-confirm__btn_green popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-canvas-photo">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Фото обкладинки видалено
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-profile-photo">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалити фото профілю</h2>
+            <div class="popup-confirm__text">Якщо ви видалите це фото профілю буде видалена і публікація з ним.
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-profile-photo" class="popup-confirm__btn_green popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-profile-photo">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Фото профілю видалено
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалити альбом?</h2>
+            <div class="popup-confirm__text">Ви дійсно хочите видалити альбом Допомога? Усі медіафайли із цього
+                альбома
+                будуть також видалені.
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-album" class="popup-confirm__btn_green popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Альбом видалено</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="download-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Завантаження Альбому</h2>
+            <div class="popup-confirm__text">Для завантаження альбому потрібен деякий час. Будь ласка зачекайте.
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#" class="popup-confirm__btn_green popup-link">Завантажити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-photo">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення фото</h2>
+            <div class="popup-confirm__text">Якщо ви видалите це фото, буде видалена і публікація з ним.
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-photo" class="popup-confirm__btn_green popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-photo">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Фото видалено</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="edit-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Назва альбома</h2>
+            <input type="text" class="popup-confirm__name" value="Допомога">
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="canvas-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Виберіть зображення для обкладинки альбому</h2>
+
+            <div class="popup-confirm__gallery gallery-popup">
+                <div class="gallery-popup__options radio-options">
+                    <div class="radio-options__item _active">
+                        <picture><source srcset="img/profile/photos/photo1.webp" type="image/webp"><img src="img/profile/photos/photo1.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image1">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo10.webp" type="image/webp"><img src="img/profile/photos/photo10.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image2">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo11.webp" type="image/webp"><img src="img/profile/photos/photo11.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image3">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo12.webp" type="image/webp"><img src="img/profile/photos/photo12.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image4">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo14.webp" type="image/webp"><img src="img/profile/photos/photo14.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image5">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo15.webp" type="image/webp"><img src="img/profile/photos/photo15.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image6">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo1.webp" type="image/webp"><img src="img/profile/photos/photo1.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image7">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo2.webp" type="image/webp"><img src="img/profile/photos/photo2.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image8">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo3.webp" type="image/webp"><img src="img/profile/photos/photo3.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image9">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo4.webp" type="image/webp"><img src="img/profile/photos/photo4.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image10">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo_big.webp" type="image/webp"><img src="img/profile/photos/photo_big.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image11">
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="crop-image">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Обрізати зображення</h2>
+
+            <div class="popup-confirm__crop">
+                <picture><source srcset="img/profile/photos/photo_big.webp" type="image/webp"><img src="img/profile/photos/photo_big.jpg" alt="Image"></picture>
+            </div>
+
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#cropped-image" class="popup-confirm__btn_green popup-link">Продовжити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="cropped-image">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__text">Будь ласка, виберіть необхідну область та підтвердіть
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_green close-popup">Підтвердити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="move-to-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Переміщення фото
+                до іншого альбому
+            </h2>
+            <div class="popup-confirm__text">Виберіть інший альбом
+                для цього зображення.
+            </div>
+            <div class="popup-confirm__select select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="help" name="album">
+                        <label for="help">Допомога</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="map" name="album">
+                        <label for="help">Мапа</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="space" name="album">
+                        <label for="help">Космос</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="street" name="album">
+                        <label for="help">Вулиця</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="office" name="album">
+                        <label for="help">Офіс</label>
+                    </div>
+                </div>
+                <div class="selected">
+                    Допомога
+                </div>
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="task-done">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__image">
+                <img src="img/tasks/Money transfer.svg" alt="Task">
+            </div>
+            <div class="popup-confirm__text">Завдання 6 пройдено!</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="pay">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Поповнити баланс</h2>
+            <div class="popup-confirm__desc">1 одиниця = 50 грн
+            </div>
+            <div class="popup-confirm__form">
+                <input type="text" id="pay-input" value="10">
+                <span>=</span>
+                <div class="popup-confirm__result"><span>500</span> грн</div>
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#pay-done" class="popup-confirm__btn_green popup-confirm__btn_wide popup-link">Поповнити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="pay-done">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#vote"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Ваш баланс було поповнено
+                на 10 одиниць!
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-account">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення акаунту</h2>
+            <div class="popup-confirm__text">Акаунт буде видалено,ви точно цього бажаєте?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-account" class="popup-confirm__btn_red btn_red popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-account">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Акаунт було видалено!</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-group">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення групи</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити группу?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-group" class="popup-confirm__btn_red btn_red popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-group">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Групу було видалено</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-page">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення сторінки</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити сторінку?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-page" class="popup-confirm__btn_red btn_red popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-page">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Сторінку було видалено</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="block-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Заблокувати</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                заблокувати цього користувача?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#blocked-user" class="popup-confirm__btn_green popup-link">Підтвердити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="blocked-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#block"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Ви заблокували користувача
+                Ліна Костенко.</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="complane-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Скарга на користувача</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                повідомити про цього користувача?
+            </div>
+            <textarea class="popup-confirm__message" placeholder="Напишіть причину скарги"></textarea>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#complaned-user" class="popup-confirm__btn_green popup-link">Підтвердити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="complaned-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#attention"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Ваша скарга на користувача
+                Ліна Костенко була відправлена!</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-friend">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалити
+                Тетяна Куриленко із друзів</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити Тетяна Куриленко зі списку друзів?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#r" class="popup-confirm__btn_green">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup viewer" id="viewer">
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="viewer__body">
+
+                <div class="viewer__photo photo-viewer">
+                    <div class="photo-viewer__slider">
+                        <div class="photo-viewer__wrapper swiper-wrapper">
+
+                        </div>
+                        <div class="photo-viewer__navigation">
+                            <div class="photo-viewer__prev">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="photo-viewer__next">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <a href="#" class="photo-viewer__close close-popup">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="viewer__comments comments-viewer">
+                    <div class="comments-viewer__slider">
+                        <div class="comments-viewer__wrapper swiper-wrapper">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div> <!-- wrapper -->
+    <script src="js/app.min.js?_v=20221214210249"></script>
+</body>
+
+</html>
