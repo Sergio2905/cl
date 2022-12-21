@@ -9117,6 +9117,10 @@ body._lock {
     height: calc(30px + 20 * (100vw - 320px) / 1084);
   }
 
+  .popup-confirm__crop {
+    width: calc(300px + 300 * (100vw - 320px) / 1084);
+  }
+
   .popup-confirm__message {
     font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1084);
     margin-bottom: calc(15px + 20 * (100vw - 320px) / 1084);
@@ -11348,6 +11352,10 @@ body._lock {
   .popup-confirm__result {
     width: 100%;
     flex: 1 1 auto;
+  }
+
+  .popup-confirm__crop {
+    width: 100%;
   }
 
   .messages__wrapper {
